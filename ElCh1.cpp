@@ -41,7 +41,7 @@ public:
     ElCh1(double newDonnee, ElCh1 *newSuiv)
     {
         donnee = newDonnee;
-        suiv = newSuiv; 
+        suiv = newSuiv;
     }
 
     // Fonction afficher
@@ -60,11 +60,9 @@ public:
     SuiteCh1(/* args */);
 };
 
-SuiteCh1::SuiteCh1(/* args */)
+SuiteCh1::SuiteCh1(/* args */) // :: si en dehors du public ou privé
 {
 }
-
-
 
 // Destructeur :
 // un destructeur porte le même nom que la classe dans laquelle il est défini et est précédé d'un tilde
@@ -86,7 +84,9 @@ int main(int argc, char const *argv[])
     suiv->afficher();
     suiv2->afficher();
     suiv->setDonnee(2.3);
-    std::cout << '\n' << "Affichage apres setDonnee" << '\n' << '\n';
+    std::cout << '\n'
+              << "Affichage apres setDonnee" << '\n'
+              << '\n';
     suiv->afficher();
     suiv2->afficher();
 
