@@ -3,8 +3,7 @@ using namespace std; // std is a standard class in C++
 
 class ElCh1
 {
-    // Privé pour protéger et donner accès grace aux fonctions d'accès (getters / setters en public)
-private:
+private: // Privé pour protéger et donner accès grace aux fonctions d'accès (getters / setters en public)
     double donnee;
     ElCh1 *suiv;
 
