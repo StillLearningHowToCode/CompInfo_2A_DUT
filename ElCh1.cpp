@@ -12,8 +12,9 @@ private:
 public:
     ElCh1(double);
     ~ElCh1(); // destructeur (free)
+
     // Setter
-    void setDonee(double d)
+    void setDonnee(double d)
     {
         donnee = d;
     }
