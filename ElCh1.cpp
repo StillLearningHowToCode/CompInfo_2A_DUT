@@ -21,7 +21,7 @@ ElCh1::ElCh1(double donnee) // nom de classe ":: = méthode de cette classe"
     this->donnee = donnee;
 }
 
-// destructeur :
+// Destructeur :
 // un destructeur porte le même nom que la classe dans laquelle il est défini et est précédé d'un tilde
 // un destructeur n'a pas de type de retour (même pas void)
 // un destructeur ne peut pas avoir d'argument
@@ -35,6 +35,6 @@ int main(int argc, char const *argv[])
 {
     std::string message = "Le programme a tourne !"; // création de la chaîne
     std::cout << message << '\n';                    // affichage de la chaine
-    ElCh1 *suiv = new ElCh1(1.62);
+    ElCh1 *suiv = new ElCh1(1.62);                   // en "statique"
     return 0;
 }
