@@ -41,7 +41,7 @@ public:
     ElCh1(double newDonnee, ElCh1 *newSuiv)
     {
         donnee = newDonnee;
-        suiv = newSuiv;
+        suiv = newSuiv; 
     }
 
     // Fonction afficher
