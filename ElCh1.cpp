@@ -52,6 +52,20 @@ public:
     }
 };
 
+class SuiteCh1
+{
+private:
+    /* data */
+public:
+    SuiteCh1(/* args */);
+};
+
+SuiteCh1::SuiteCh1(/* args */)
+{
+}
+
+
+
 // Destructeur :
 // un destructeur porte le même nom que la classe dans laquelle il est défini et est précédé d'un tilde
 // un destructeur n'a pas de type de retour (même pas void)
