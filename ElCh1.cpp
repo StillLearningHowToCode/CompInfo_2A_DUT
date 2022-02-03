@@ -10,18 +10,22 @@ private:
     ElCh1 *suiv;
 
 public:
-    ElCh1(double, ElCh1 *suiv);
+    ElCh1(double);
     ~ElCh1(); // destructeur (free)
 };
 
 // constructeur
-ElCh1::ElCh1(double donnee, ElCh1 *suiv) // nom de classe ":: = méthode de cette classe"
+ElCh1::ElCh1(double donnee) // nom de classe ":: = méthode de cette classe"
 {
     // constructeur = initialiser les données
     this->donnee = donnee;
 }
 
-// destructeur
+// destructeur :
+// un destructeur porte le même nom que la classe dans laquelle il est défini et est précédé d'un tilde
+// un destructeur n'a pas de type de retour (même pas void)
+// un destructeur ne peut pas avoir d'argument
+// la définition d'un destructeur n'est pas obligatoire lorsque celui-ci n'est pas nécessaire
 ElCh1::~ElCh1()
 {
 }
@@ -30,6 +34,7 @@ ElCh1::~ElCh1()
 int main(int argc, char const *argv[])
 {
     std::string message = "Le programme a tourne !"; // création de la chaîne
-    std::cout << message << '\n';                    // affichage de "Hello World !"
+    std::cout << message << '\n';                    // affichage de la chaine
+    ElCh1 *suiv = new ElCh1(1.62);
     return 0;
 }
