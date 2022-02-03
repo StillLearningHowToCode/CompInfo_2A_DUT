@@ -10,7 +10,7 @@ private:
     ElCh1 *suiv;
 
 public:
-    ElCh1(double donnee, ElCh1 *suiv);
+    ElCh1(double, ElCh1 *suiv);
     ~ElCh1(); // destructeur (free)
 };
 
