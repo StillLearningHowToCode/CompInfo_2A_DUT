@@ -19,6 +19,11 @@ public:
         donnee = d;
     }
 
+    void setElCh1()
+    {
+        this->suiv = suiv;
+    }
+    
     // Getter
     int getDonnee()
     {
