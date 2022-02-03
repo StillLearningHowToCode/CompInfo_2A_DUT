@@ -31,7 +31,7 @@ public:
         return donnee;
     }
 
-    // constructeur
+    // Constructeur
     // ElCh1::ElCh1(double donnee) // nom de classe ":: = méthode de cette classe"
     // {
     //     // constructeur = initialiser les données
@@ -71,7 +71,11 @@ int main(int argc, char const *argv[])
     ElCh1 *suiv2 = new ElCh1(5.890, suiv);
     suiv->afficher();
     suiv2->afficher();
+    suiv->setDonnee(2.3);
+    std::cout << '\n' << "Affichage apres setDonnee" << '\n' << '\n';
+    suiv->afficher();
+    suiv2->afficher();
 
-    std::cout << "--- Fin programme ---" << '\n';                    // affichage de la chaine
+    std::cout << "--- Fin programme ---" << '\n'; // affichage de la chaine
     return 0;
 }
