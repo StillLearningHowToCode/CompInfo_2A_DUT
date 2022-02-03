@@ -10,13 +10,14 @@ private:
     ElCh1 *suiv;
 
 public:
-    ElCh1(/* args = attributs */);
+    ElCh1(double donnee, ElCh1 *suiv);
     ~ElCh1(); // destructeur (free)
 };
 
-ElCh1::ElCh1(/* args */) // nom de classe ":: = méthode de cette classe"
+ElCh1::ElCh1(double donnee, ElCh1 *suiv) // nom de classe ":: = méthode de cette classe"
 {
     // constructeur = initialiser les données
+    this->donnee = donnee;
 }
 
 ElCh1::~ElCh1()
@@ -26,6 +27,7 @@ ElCh1::~ElCh1()
 // Main
 int main(int argc, char const *argv[])
 {
-    /* code */
+    std::string message = "Le programme a tourne !"; // création de la chaîne
+    std::cout << message << '\n';                    // affichage de "Hello World !"
     return 0;
 }
