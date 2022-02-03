@@ -35,6 +35,6 @@ int main(int argc, char const *argv[])
 {
     std::string message = "Le programme a tourne !"; // création de la chaîne
     std::cout << message << '\n';                    // affichage de la chaine
-    ElCh1 *suiv = new ElCh1(1.62);                   // en "statique"
+    ElCh1 *suiv = new ElCh1(1.62);                   // en "dynamique"
     return 0;
 }
