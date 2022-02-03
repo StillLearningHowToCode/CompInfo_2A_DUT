@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std; // std is a standard class in C++
+
+class ElCh1
+{
+    // Privé pour protéger et donner accès grace aux fonctions d'accès (getters / setters en public)
+private:
+    double donnee;
+    ElCh1 *suiv;
+
+public:
+};
+
+// Main
+int main(int argc, char const *argv[])
+{
+    /* code */
+    return 0;
+}
