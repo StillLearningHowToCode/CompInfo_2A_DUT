@@ -14,12 +14,14 @@ public:
     ~ElCh1(); // destructeur (free)
 };
 
+// constructeur
 ElCh1::ElCh1(double donnee, ElCh1 *suiv) // nom de classe ":: = méthode de cette classe"
 {
     // constructeur = initialiser les données
     this->donnee = donnee;
 }
 
+// destructeur
 ElCh1::~ElCh1()
 {
 }
