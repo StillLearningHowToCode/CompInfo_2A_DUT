@@ -32,11 +32,11 @@ public:
     }
 
     // constructeur
-    ElCh1::ElCh1(double donnee) // nom de classe ":: = méthode de cette classe"
-    {
-        // constructeur = initialiser les données
-        this->donnee = donnee;
-    }
+    // ElCh1::ElCh1(double donnee) // nom de classe ":: = méthode de cette classe"
+    // {
+    //     // constructeur = initialiser les données
+    //     this->donnee = donnee;
+    // }
 
     ElCh1(double newDonnee, ElCh1 *newSuiv)
     {
@@ -64,12 +64,14 @@ ElCh1::~ElCh1()
 // Main
 int main(int argc, char const *argv[])
 {
-    std::string message = "Le programme a tourne !"; // création de la chaîne
+    std::string message = "--- Debut programme ---"; // création de la chaîne
     std::cout << message << '\n';                    // affichage de la chaine
 
     ElCh1 *suiv = new ElCh1(1.62, NULL); // en "dynamique"
     ElCh1 *suiv2 = new ElCh1(5.890, suiv);
     suiv->afficher();
     suiv2->afficher();
+
+    std::cout << "--- Fin programme ---" << '\n';                    // affichage de la chaine
     return 0;
 }
