@@ -54,8 +54,8 @@ public:
     double ask4Data()
     {
         int x;
-        cout << "Type a number: ";       // Type a number and press enter
-        cin >> x;                        // Get user input from the keyboard
+        cout << "Type a number: "; // Type a number and press enter
+        cin >> x;                  // Get user input from the keyboard
     }
 };
 
