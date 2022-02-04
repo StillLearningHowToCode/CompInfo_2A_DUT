@@ -50,20 +50,24 @@ public:
         // std::string afficher = "[" + parseInt(donnee) + "]"; // création de la chaîne
         std::cout << "[" << donnee << "]" << '\n'; // affichage de la chaine : << = + (concaténation)
     }
+
+    double ask4Data()
+    {
+        int x;
+        cout << "Type a number: ";       // Type a number and press enter
+        cin >> x;                        // Get user input from the keyboard
+    }
 };
 
 class suivant
 {
 private:
-    /* data */
+    double valeur;
+    suivant *pointeur;
+
 public:
-    suivant(/* args */);
+    // suivant(double, suivant);
 };
-
-suivant::suivant(/* args */)
-{
-}
-
 
 // Destructeur :
 // un destructeur porte le même nom que la classe dans laquelle il est défini et est précédé d'un tilde
@@ -79,7 +83,7 @@ int main(int argc, char const *argv[])
 {
     std::string message = "--- Debut programme ---"; // création de la chaîne
     std::cout << message << '\n';                    // affichage de la chaine
-    
+
     // Création des objets
     ElCh1 *suiv = new ElCh1(1.62, NULL); // en "dynamique"
     ElCh1 *suiv2 = new ElCh1(5.890, suiv);
