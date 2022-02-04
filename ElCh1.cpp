@@ -79,12 +79,17 @@ int main(int argc, char const *argv[])
 {
     std::string message = "--- Debut programme ---"; // création de la chaîne
     std::cout << message << '\n';                    // affichage de la chaine
-
+    
+    // Création des objets
     ElCh1 *suiv = new ElCh1(1.62, NULL); // en "dynamique"
     ElCh1 *suiv2 = new ElCh1(5.890, suiv);
+
+    // Affichage des objets
     suiv->afficher();
     suiv2->afficher();
+    // Mise à jour de la donnée
     suiv->setDonnee(2.3);
+    // Affichage après maj
     std::cout << '\n'
               << "Affichage apres setDonnee" << '\n'
               << '\n';
