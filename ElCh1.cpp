@@ -52,17 +52,18 @@ public:
     }
 };
 
-class SuiteCh1
+class suivant
 {
 private:
     /* data */
 public:
-    SuiteCh1(/* args */);
+    suivant(/* args */);
 };
 
-SuiteCh1::SuiteCh1(/* args */) // :: si en dehors du public ou privé
+suivant::suivant(/* args */)
 {
 }
+
 
 // Destructeur :
 // un destructeur porte le même nom que la classe dans laquelle il est défini et est précédé d'un tilde
