@@ -3,7 +3,7 @@
 // #include <cstdio> //stdio.h
 using namespace std; // std is a standard class in C++
 
-class ElCh1
+class ElCh1 // ElementCh1
 {
 private:
     // Privé pour protéger (surtout de la modif des utilisateurs par ex)
