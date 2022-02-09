@@ -50,7 +50,7 @@ public:
     void afficher()
     {
         // std::string afficher = "[" + parseInt(donnee) + "]"; // création de la chaîne
-        std::cout << "[" << donnee << "]" << '\n'; // affichage de la chaine : << = + (concaténation)
+        std::cout << "[" << donnee << "]" << suiv << '\n'; // affichage de la chaine : << = + (concaténation)
     }
 
     double ask4Data()
@@ -89,10 +89,12 @@ int main(int argc, char const *argv[])
     // Création des objets
     ElCh1 *suiv = new ElCh1(1.62, NULL); // en "dynamique"
     ElCh1 *suiv2 = new ElCh1(5.890, suiv);
+    ElCh1 *suiv3 = new ElCh1(99.90, suiv2);
 
     // Affichage des objets
     suiv->afficher();
     suiv2->afficher();
+    suiv3->afficher();
     // Mise à jour de la donnée
     suiv->setDonnee(2.3);
     // Affichage après maj
@@ -101,6 +103,7 @@ int main(int argc, char const *argv[])
               << '\n';
     suiv->afficher();
     suiv2->afficher();
+    suiv3->afficher();
 
     std::cout << "--- Fin programme ---" << '\n'; // affichage de la chaine
     return 0;
