@@ -1,4 +1,6 @@
 #include <iostream>
+// #include <cstdlib> // stdlib.h
+// #include <cstdio> //stdio.h
 using namespace std; // std is a standard class in C++
 
 class ElCh1
@@ -59,14 +61,14 @@ public:
     }
 };
 
-class suivant
+class SuiteCh1
 {
 private:
     double valeur;
-    suivant *pointeur;
+    SuiteCh1 *pPremier; // pointeur
 
 public:
-    // suivant(double, suivant);
+    // SuiteCh1(double, SuiteCh1);
 };
 
 // Destructeur :
