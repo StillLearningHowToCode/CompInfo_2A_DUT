@@ -1,5 +1,4 @@
-# CompInfo
-TD et Projet :sparkles: :rocket:
+# GALL Thomas & MULLER Léane
 
 ## Compiler un fichier
 
