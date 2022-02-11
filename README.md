@@ -8,13 +8,6 @@ Compile a CPP file to generate executable target file:
 g++ -o main.exe hello.cpp
 ```
 
-# Une image vaut mille mots 
-
-![image](https://user-images.githubusercontent.com/42692272/153230276-183d20ba-c973-4e02-b8cd-8da4aba32dee.png)
-
-Les fioles chimiques, ce sont les attributs.
-Les boutons sur la façade avant, ce sont les méthodes.
-
 # Standard Header Files And Their Uses: 
  
 
