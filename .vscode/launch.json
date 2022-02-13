@@ -9,9 +9,9 @@
         ""
       ],
       "stopAtEntry": false,
-      "cwd": "d:/Github_clones/CompInfo/partie1",
+      "cwd": "d:/Github_clones/CompInfo",
       "environment": [],
-      "program": "d:/Github_clones/CompInfo/partie1/build/Debug/outDebug",
+      "program": "d:/Github_clones/CompInfo/build/Debug/outDebug",
       "internalConsoleOptions": "openOnSessionStart",
       "MIMode": "gdb",
       "miDebuggerPath": "C:/MinGW/bin/gdb.exe",
