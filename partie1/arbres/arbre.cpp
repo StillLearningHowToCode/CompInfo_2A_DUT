@@ -1,7 +1,6 @@
 #ifndef ABR_CPP
 #define ABR_CPP
-
-#include "abr.h"
+#include "arbre.h"
 
 // Constructeur
 template <class T>
