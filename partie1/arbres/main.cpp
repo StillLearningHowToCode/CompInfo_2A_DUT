@@ -4,7 +4,7 @@ int main()
 {
 
     // Instanciation d'un arbre
-    ABR<int> arbre;
+    Arbre<int> arbre;
     arbre.inserer(40);
     arbre.inserer(50);
     arbre.inserer(14);

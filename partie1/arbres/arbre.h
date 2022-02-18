@@ -15,26 +15,26 @@ struct Noeud
 
 // Définition de la classe Liste
 template <class T>
-class ABR
+class Arbre
 {
 private:
     Noeud<T> *racine;
     int compteur;
     Noeud<T> *CreerNoeud(const T &valeur);
     // Fonctions d'aide
-    void detruire(Noeud<T> *ptr);                                                
-    void inserer(const T &value, Noeud<T> *&ptr);                                
-    void infixe(Noeud<T> *ptr) const;                                            
-    void prefixe(Noeud<T> *ptr) const;                                           
-    void postfixe(Noeud<T> *ptr) const;                                         
-    Noeud<T> *successeur(Noeud<T> *ptr, Noeud<T> *&parent) const;                
-    Noeud<T> *predecesseur(Noeud<T> *ptr, Noeud<T> *&parent) const;              
-    void supprimer(Noeud<T> *ptr, Noeud<T> *parent);                            
-    Noeud<T> *recherche(const T &value, Noeud<T> *ptr, Noeud<T> *&parent) const; 
+    void detruire(Noeud<T> *ptr);
+    void inserer(const T &value, Noeud<T> *&ptr);
+    void infixe(Noeud<T> *ptr) const;
+    void prefixe(Noeud<T> *ptr) const;
+    void postfixe(Noeud<T> *ptr) const;
+    Noeud<T> *successeur(Noeud<T> *ptr, Noeud<T> *&parent) const;
+    Noeud<T> *predecesseur(Noeud<T> *ptr, Noeud<T> *&parent) const;
+    void supprimer(Noeud<T> *ptr, Noeud<T> *parent);
+    Noeud<T> *recherche(const T &value, Noeud<T> *ptr, Noeud<T> *&parent) const;
 
 public:
-    ABR();
-    ~ABR();
+    Arbre();
+    ~Arbre();
     void inserer(const T &value);
     void detruire();
     void supprimer(const T &value);

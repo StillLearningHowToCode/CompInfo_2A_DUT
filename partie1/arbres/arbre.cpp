@@ -1,20 +1,20 @@
-#ifndef ABR_CPP
-#define ABR_CPP
+#ifndef ARBRE_CPP
+#define ARBRE_CPP
 #include "arbre.h"
 
 // Constructeur
 template <class T>
-ABR<T>::ABR() : racine(0), compteur(0) {}
+Arbre<T>::Arbre() : racine(0), compteur(0) {}
 
 // Destructeur
 template <class T>
-ABR<T>::~ABR()
+Arbre<T>::~Arbre()
 {
     detruire(racine);
 }
 
 template <class T>
-Noeud<T> *ABR<T>::CreerNoeud(const T &valeur)
+Noeud<T> *Arbre<T>::CreerNoeud(const T &valeur)
 {
     Noeud<T> *temp = new Noeud<T>;
     temp->donnees = valeur;
@@ -25,7 +25,7 @@ Noeud<T> *ABR<T>::CreerNoeud(const T &valeur)
 
 // Inserer un noeud
 template <class T>
-void ABR<T>::inserer(const T &valeur)
+void Arbre<T>::inserer(const T &valeur)
 {
     inserer(valeur, racine);
     compteur++;
@@ -33,7 +33,7 @@ void ABR<T>::inserer(const T &valeur)
 
 // Rechercher un noeud
 template <class T>
-Noeud<T> *ABR<T>::recherche(const T &valeur) const
+Noeud<T> *Arbre<T>::recherche(const T &valeur) const
 {
     Noeud<T> *parent = 0;
     return recherche(valeur, racine);
@@ -41,41 +41,41 @@ Noeud<T> *ABR<T>::recherche(const T &valeur) const
 
 // Parcours infixe
 template <class T>
-void ABR<T>::infixe() const
+void Arbre<T>::infixe() const
 {
     infixe(racine);
 }
 
 // Parcours prefixe
 template <class T>
-void ABR<T>::prefixe() const
+void Arbre<T>::prefixe() const
 {
     prefixe(racine);
 }
 
 // Parcours postfixe
 template <class T>
-void ABR<T>::postfixe() const
+void Arbre<T>::postfixe() const
 {
     postfixe(racine);
 }
 
 // Nombre de noeud dans l'arbre
 template <class T>
-int ABR<T>::taille() const
+int Arbre<T>::taille() const
 {
     return compteur;
 }
 
 template <class T>
-bool ABR<T>::estVide() const
+bool Arbre<T>::estVide() const
 {
     return (compteur == 0);
 }
 
 // La fonction d'aide (Récursive) appelée par le destructeur
 template <class T>
-void ABR<T>::detruire(Noeud<T> *ptr)
+void Arbre<T>::detruire(Noeud<T> *ptr)
 {
     if (!ptr)
     {
@@ -89,7 +89,7 @@ void ABR<T>::detruire(Noeud<T> *ptr)
 
 // LA fonction d'aide (Récursive) appelée par la fonction membre inserer
 template <class T>
-void ABR<T>::inserer(const T &valeur, Noeud<T> *&ptr)
+void Arbre<T>::inserer(const T &valeur, Noeud<T> *&ptr)
 {
     // si l'arbre vide, inserer comme racine
     if (!ptr)
@@ -112,7 +112,7 @@ void ABR<T>::inserer(const T &valeur, Noeud<T> *&ptr)
 
 // Fonction d'aide (Récursive) appeler par la fonction infixe
 template <class T>
-void ABR<T>::infixe(Noeud<T> *ptr) const
+void Arbre<T>::infixe(Noeud<T> *ptr) const
 {
     if (!ptr)
     {
@@ -126,7 +126,7 @@ void ABR<T>::infixe(Noeud<T> *ptr) const
 
 // Fonction d'aide (Récursive) appeler par la fonction prefixe
 template <class T>
-void ABR<T>::prefixe(Noeud<T> *ptr) const
+void Arbre<T>::prefixe(Noeud<T> *ptr) const
 {
     if (!ptr)
     {
@@ -140,7 +140,7 @@ void ABR<T>::prefixe(Noeud<T> *ptr) const
 
 // Fonction d'aide (Récursive) appeler par la fonction postfixe
 template <class T>
-void ABR<T>::postfixe(Noeud<T> *ptr) const
+void Arbre<T>::postfixe(Noeud<T> *ptr) const
 {
     if (!ptr)
     {
@@ -154,7 +154,7 @@ void ABR<T>::postfixe(Noeud<T> *ptr) const
 
 // Fonction d'aide (Récursive) appeler par la fonction membre recherche
 template <class T>
-Noeud<T> *ABR<T>::recherche(const T &valeur, Noeud<T> *ptr, Noeud<T> *&parent) const
+Noeud<T> *Arbre<T>::recherche(const T &valeur, Noeud<T> *ptr, Noeud<T> *&parent) const
 {
     if (!ptr)
     {
@@ -181,7 +181,7 @@ Noeud<T> *ABR<T>::recherche(const T &valeur, Noeud<T> *ptr, Noeud<T> *&parent) c
 }
 
 template <class T>
-Noeud<T> *ABR<T>::successeur(Noeud<T> *ptr, Noeud<T> *&parent) const
+Noeud<T> *Arbre<T>::successeur(Noeud<T> *ptr, Noeud<T> *&parent) const
 {
     if (!ptr)
     {
@@ -198,7 +198,7 @@ Noeud<T> *ABR<T>::successeur(Noeud<T> *ptr, Noeud<T> *&parent) const
 }
 
 template <class T>
-Noeud<T> *ABR<T>::predecesseur(Noeud<T> *ptr, Noeud<T> *&parent) const
+Noeud<T> *Arbre<T>::predecesseur(Noeud<T> *ptr, Noeud<T> *&parent) const
 {
     if (!ptr)
     {
@@ -215,7 +215,7 @@ Noeud<T> *ABR<T>::predecesseur(Noeud<T> *ptr, Noeud<T> *&parent) const
 }
 
 template <class T>
-void ABR<T>::supprimer(const T &valeur)
+void Arbre<T>::supprimer(const T &valeur)
 {
     Noeud<T> *parent = 0;
     Noeud<T> *del = recherche(valeur, racine, parent);
@@ -231,7 +231,7 @@ void ABR<T>::supprimer(const T &valeur)
 
 // Fonction d'aide (Récursive) appeler par la fonction membre supprimer
 template <class T>
-void ABR<T>::supprimer(Noeud<T> *ptr, Noeud<T> *parent)
+void Arbre<T>::supprimer(Noeud<T> *ptr, Noeud<T> *parent)
 {
 
     if (ptr->gauche == 0 && ptr->droit == 0)
