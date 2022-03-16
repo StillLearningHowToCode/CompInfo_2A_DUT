@@ -9,9 +9,9 @@ using namespace std;
 
 void translateAlgo(string str)
 {
-    cout << "-------------------------------------------------" << endl;
-    cout << "Traduction de : " + str << endl;
-    cout << "-------------------------------------------------" << endl;
+    cout << "-------------------------------------------------------------------------------" << endl;
+    cout << "Traduction de : \n" + str << endl;
+    cout << "-------------------------------------------------------------------------------" << endl;
     string si = "if";
     string alors = "then";
     string fi = "";
@@ -24,6 +24,30 @@ void translateAlgo(string str)
     str.replace(str.find("pour"), 4, pour);
     str.replace(str.find("faire"), 5, faire);
 
-    cout << str << endl;
-    cout << "-------------------------------------------------" << endl;
+    cout << "Resultat : \n" + str << endl;
+    cout << "-------------------------------------------------------------------------------" << endl;
+}
+
+void translateEntete(string str)
+{
+    cout << "-------------------------------------------------------------------------------" << endl;
+    cout << "Traduction de l'entete : \n" + str << endl;
+    cout << "-------------------------------------------------------------------------------" << endl;
+
+    string pub = "public";
+    string priv = "private";
+    string protec = "protected";
+    string entier = "int";
+    string chaine = "string";
+    string module = "void";
+
+    str.replace(str.find("Module"), 6, module);
+    str.replace(str.find("+"), 1, pub);
+    // str.replace(str.find("-"), 1, priv);
+    // str.replace(str.find("#"), 1, protec);
+    str.replace(str.find("entier"), 6, entier);
+    str.replace(str.find("chaine"), 6, chaine);
+
+    cout << "Resultat : \n" + str << endl;
+    cout << "-------------------------------------------------------------------------------" << endl;
 }

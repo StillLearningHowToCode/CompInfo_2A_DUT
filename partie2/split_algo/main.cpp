@@ -32,10 +32,13 @@ int main()
     // string str = "si condition alors consequence fi";
     // translateAlgo(str);
 
-    // cout << "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" << endl;
-
     string str2 = "si condition alors consequence pour(int i=0, i<=2, i++) faire action fi";
     translateAlgo(str2);
+
+    cout << "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" << endl;
+
+    string str = " + Module Algorithme(nombre entier, texte chaine, nombre2 double);";
+    translateEntete(str);
 
     // removeDupWord(str);
 
