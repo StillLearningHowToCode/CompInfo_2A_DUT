@@ -1,9 +1,10 @@
 #include <bits/stdc++.h>
 #include <iostream>
 #include <string>
-using std::cout; 
+#include "algo.cpp"
 using std::cin;
-using std::endl; 
+using std::cout;
+using std::endl;
 using std::string;
 using namespace std;
 
@@ -28,24 +29,34 @@ void removeDupWord(string str)
 // Driver code
 int main()
 {
-    string str = "si condition alors consequence fi";
-    removeDupWord(str);
+    // string str = "si condition alors consequence fi";
+    // translateAlgo(str);
 
-    string input = "si condition alors consequence fi";
-    string si = "if";
-    string alors = "then";
-    string fi = "";
+    // cout << "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" << endl;
 
-    cout << input << endl;
+    string str2 = "si condition alors consequence pour(int i=0, i<=2, i++) faire action fi";
+    translateAlgo(str2);
 
-    input.replace(input.find("si"), 2, si);
-    input.replace(input.find("alors"), 5, alors);
-    input.replace(input.find("fi"), 2, fi);
-    removeDupWord(input);
+    // removeDupWord(str);
 
-    cout << input << endl;
+    // string input = "si condition alors consequence fi";
+    // string si = "if";
+    // string alors = "then";
+    // string fi = "";
 
-    return EXIT_SUCCESS;
+    // cout << "-------------------------------------------------" << endl;
+    // cout << input << endl;
+    // cout << "-------------------------------------------------" << endl;
+
+    // input.replace(input.find("si"), 2, si);
+    // input.replace(input.find("alors"), 5, alors);
+    // input.replace(input.find("fi"), 2, fi);
+    // removeDupWord(input);
+
+    // cout << "-------------------------------------------------" << endl;
+    // cout << input << endl;
+
+    // return EXIT_SUCCESS;
 
     return 0;
 }
