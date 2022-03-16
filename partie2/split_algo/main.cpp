@@ -27,10 +27,10 @@ void removeDupWord(string str)
 // Driver code
 int main()
 {
-    string str = "si condition alors condition fi";
+    string str = "si condition alors consequence fi";
     removeDupWord(str);
 
-    string input = "si condition alors condition fi";
+    string input = "si condition alors consequence fi";
     string si = "if";
     string alors = "then";
     string fi = "";
