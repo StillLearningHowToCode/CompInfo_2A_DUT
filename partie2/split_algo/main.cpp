@@ -1,4 +1,3 @@
-// C++ program to print words in a sentence
 #include <bits/stdc++.h>
 #include <iostream>
 #include <string>
